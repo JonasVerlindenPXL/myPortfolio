@@ -1,0 +1,47 @@
+.card-glow {
+  height: 30vh;
+  aspect-ratio: 1.5/1;
+  background: var(--color-black);
+  border-radius: 0.5rem;
+  position: relative;
+  transform: perspective(500px) rotateX(20deg) rotateY(20deg);
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  margin: auto;
+}
+
+.card-glow::before,
+.card-glow::after {
+  content: "";
+  position: absolute;
+  inset: -1rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--color-red),
+    var(--color-purple),
+    var(--color-red),
+    var(--color-purple),
+    var(--color-red)
+  );
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+  transform: translateZ(-50px);
+}
+
+.card-glow::before {
+  inset: -0.75rem;
+  transform: translateZ(-1px);
+  opacity: 0.5;
+}
+
+.card-glow::after {
+  filter: blur(3.5rem);
+}
+.card-glow-content{
+  display: grid;
+  gap: 2rem;
+}
+.card-glow-info{
+  display: grid;
+  gap: 1rem;
+}

@@ -6,6 +6,7 @@ import { CubeComponent } from './components/cube/cube.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { CardGlowComponent } from './components/card-glow/card-glow.component';
 import { ActivitypageComponent } from './pages/activitypage/activitypage.component';
+import { CardMandatoryActivityComponent } from './components/card-mandatory-activity/card-mandatory-activity.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ActivitypageComponent } from './pages/activitypage/activitypage.compone
     CubeComponent,
     HomepageComponent,
     CardGlowComponent,
-    ActivitypageComponent
+    ActivitypageComponent,
+    CardMandatoryActivityComponent
   ],
   imports: [
     BrowserModule

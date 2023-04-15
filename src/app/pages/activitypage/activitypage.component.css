@@ -14,16 +14,8 @@
 }
 .activity-layout-activities{
   display: grid;
-  grid-template-columns: 30% 70%;
-}
-.layout-activities-left{
-
-}
-.layout-activities-right{
-  display: grid;
-  gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3rem;
 }
 
-.layout-activities-figure{
-
-}
