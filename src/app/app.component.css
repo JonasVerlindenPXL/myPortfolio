@@ -1,2 +1,12 @@
+app-homepage {
+  position: absolute;
+}
 
+app-cube {
+  z-index: 0;
+  margin: auto;
+}
 
+app-homepage {
+  z-index: 1;
+}

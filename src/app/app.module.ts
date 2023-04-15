@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CubeComponent } from './components/cube/cube.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { CardGlowComponent } from './components/card-glow/card-glow.component';
+import { ActivitypageComponent } from './pages/activitypage/activitypage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CubeComponent,
-    HomepageComponent
+    HomepageComponent,
+    CardGlowComponent,
+    ActivitypageComponent
   ],
   imports: [
     BrowserModule

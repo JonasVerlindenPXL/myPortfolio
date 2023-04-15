@@ -1,0 +1,48 @@
+.home-layout {
+  display: grid;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 2;
+  grid-template-columns: 50% 50%;
+  color: var(--color-font);
+}
+
+.home-layout-text {
+  height: 10dvh;
+  margin: auto auto auto 10%;
+}
+
+.home-layout-text-changing {
+  background-image: linear-gradient(to right, var(--color-purple), var(--color-red));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(150%);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.home-layout-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-layout-picture-image {
+  height: 70%;
+  mask-image: linear-gradient(to top, transparent, var(--color-black));
+  mask-size: 100% 100%;
+}
+
+@media screen and (max-width: 900px){
+  .home-layout-picture-image{
+    margin-top: 60%;
+    height: 30%;
+  }
+}

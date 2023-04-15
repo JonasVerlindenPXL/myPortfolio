@@ -52,7 +52,6 @@ export class CubeComponent implements AfterViewInit {
     const textureLoader = new THREE.TextureLoader();
     const normalTexture = textureLoader.load('normal_map-defaults.jpg');
 
-
     const material = new THREE.MeshStandardMaterial();
     material.metalness = 0.7;
     material.roughness = 0.2;
@@ -110,7 +109,6 @@ export class CubeComponent implements AfterViewInit {
     // this.scene.add(pointLight2Helper);
 
   }
-
 
   private render(): void {
     requestAnimationFrame(() => this.render());
