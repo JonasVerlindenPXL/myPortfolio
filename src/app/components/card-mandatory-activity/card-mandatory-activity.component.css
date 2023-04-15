@@ -8,6 +8,12 @@
   transform-style: preserve-3d;
   transform-origin: center center;
   margin: auto;
+  padding: 2rem;
+  transition: height 0.5s ease-in-out;
+
+}
+.card-glow:hover{
+  height: 31vh;
 }
 
 .card-glow::before,
@@ -37,11 +43,29 @@
 .card-glow::after {
   filter: blur(3.5rem);
 }
-.card-glow-content{
+
+.card-glow-content {
   display: grid;
   gap: 2rem;
+  padding: 15px;
 }
-.card-glow-info{
+
+.card-glow-title {
+  position: relative;
+}
+
+.card-glow-title::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--color-purple), var(--color-red))
+
+}
+
+.card-glow-info {
   display: grid;
   gap: 1rem;
 }

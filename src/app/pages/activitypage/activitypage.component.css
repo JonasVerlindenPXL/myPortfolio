@@ -15,7 +15,8 @@
 .activity-layout-activities{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 40vh);
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 

@@ -16,7 +16,7 @@ export class AppComponent {
       const rect = homeLayoutText.getBoundingClientRect();
       const mouseX = event.clientX - rect.left - rect.width / 2;
       const mouseY = event.clientY - rect.top - rect.height / 2;
-      homeLayoutText.style.transform = `perspective(500px) rotateX(${mouseY / -100}deg) rotateY(${mouseX / 100}deg)`;
+      homeLayoutText.style.transform = `perspective(800px) rotateX(${mouseY / -100}deg) rotateY(${mouseX / 100}deg)`;
     });
   }
 
