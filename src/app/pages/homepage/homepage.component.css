@@ -1,6 +1,5 @@
 .home-layout {
   display: grid;
-  height: 100dvh;
   width: 100dvw;
   z-index: 2;
   grid-template-columns: 50% 50%;
@@ -35,9 +34,10 @@ h2 {
 }
 
 .home-layout-picture-image {
-  height: 70%;
+  height: 50%;
   mask-image: linear-gradient(to top, transparent, var(--color-black));
   mask-size: 100% 100%;
+  margin-left: 20%;
 }
 
 @media screen and (max-width: 900px){

@@ -1,8 +1,29 @@
 .activity-layout{
   display: grid;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.2) 4%,
+    transparent 8%
+  ) 0 0;
+  background-size: 5vmin 5vmin;
 
 }
 .activity-layout-title{
   margin: auto;
   font-size: 5rem;
+  padding: 10rem;
+}
+.activity-layout-activities{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.layout-activities-left{
+
+}
+.layout-activities-right{
+  display: grid;
+  gap: 5rem;
+}
+
+.layout-activities-figure{
+
 }
