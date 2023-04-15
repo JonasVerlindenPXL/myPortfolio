@@ -1,5 +1,4 @@
-import {AfterViewInit, Component, ElementRef, HostListener} from '@angular/core';
-import * as Hammer from 'hammerjs';
+import {Component, ElementRef, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',

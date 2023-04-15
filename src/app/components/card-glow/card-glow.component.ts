@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-card-glow',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-glow.component.css']
 })
 export class CardGlowComponent {
-
+  @Input() height: string = '60';
 }

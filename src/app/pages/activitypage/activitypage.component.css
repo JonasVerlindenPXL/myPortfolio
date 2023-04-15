@@ -1,0 +1,8 @@
+.activity-layout{
+  display: grid;
+
+}
+.activity-layout-title{
+  margin: auto;
+  font-size: 5rem;
+}
