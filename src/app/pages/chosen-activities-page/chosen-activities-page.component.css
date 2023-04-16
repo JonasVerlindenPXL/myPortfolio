@@ -74,5 +74,10 @@ img {
   max-height: 100%;
   object-fit: cover;
 }
-
-
+.link{
+  margin: 1rem;
+}
+a{
+  font-size: 1.5rem;
+  color: var(--color-font);
+}

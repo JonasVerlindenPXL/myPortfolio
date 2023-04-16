@@ -10,7 +10,6 @@
   margin: auto;
   padding: 2rem;
   transition: height 0.5s ease-in-out;
-
 }
 .card-glow:hover{
   height: 33vh;

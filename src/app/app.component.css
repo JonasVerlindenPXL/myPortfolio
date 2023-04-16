@@ -13,6 +13,43 @@ app-homepage {
 .footer{
   height: 20dvh;
 }
-.container-title{
+.trailer{
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 500ms ease;
+}
+body:hover > .trailer{
+  opacity: 1;
+}
+.trailer::after,
+.trailer::before {
+  content: "";
+  position: absolute;
+  inset: -5rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--color-red),
+    var(--color-purple),
+    var(--color-red),
+    var(--color-purple),
+    var(--color-red)
+  );
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+  transform: translateZ(-50px);
+}
+.trailer::before {
+  inset: -0.75rem;
+  transform: translateZ(-1px);
+  opacity: 0.5;
+}
 
+.trailer::after {
+  filter: blur(2.5rem);
 }
