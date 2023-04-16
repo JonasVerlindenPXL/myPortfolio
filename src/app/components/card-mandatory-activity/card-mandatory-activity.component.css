@@ -1,5 +1,5 @@
 .card-glow {
-  height: 30vh;
+  height: 32vh;
   aspect-ratio: 1.5/1;
   background: var(--color-black);
   border-radius: 0.5rem;
@@ -13,7 +13,7 @@
 
 }
 .card-glow:hover{
-  height: 31vh;
+  height: 33vh;
 }
 
 .card-glow::before,
