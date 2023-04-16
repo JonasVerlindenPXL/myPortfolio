@@ -10,3 +10,6 @@ app-cube {
 app-homepage {
   z-index: 1;
 }
+.footer{
+  height: 20dvh;
+}
