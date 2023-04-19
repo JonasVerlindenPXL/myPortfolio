@@ -1,0 +1,62 @@
+.container {
+  height: fit-content;
+  width: 100vw;
+  display: grid;
+  justify-content: center; /* add to center .container-content horizontally */
+}
+
+.container-title {
+  margin: auto;
+  font-size: 3rem;
+  padding: 10rem;
+}
+
+.container-content {
+  display: grid;
+  grid-template-columns: 70%;
+  justify-content: center; /* add to center .text vertically */
+}
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+h2 {
+  margin: 3rem auto;
+  font-size: 2rem;
+  position: relative;
+  background: var(--color-black);
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  padding: 2rem 5rem;
+}
+
+h2::after,
+h2::before {
+  content: "";
+  position: absolute;
+  inset: -1rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--color-red),
+    var(--color-purple),
+    var(--color-red),
+    var(--color-purple),
+    var(--color-red)
+  );
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+  transform: translateZ(-50px);
+}
+h2::before {
+  inset: -0.75rem;
+  transform: translateZ(-1px);
+  opacity: 0.5;
+}
+
+h2::after {
+  filter: blur(3.5rem);
+}
+

@@ -9,6 +9,7 @@ import { ActivitypageComponent } from './pages/activitypage/activitypage.compone
 import { CardMandatoryActivityComponent } from './components/card-mandatory-activity/card-mandatory-activity.component';
 import { ChosenActivitiesPageComponent } from './pages/chosen-activities-page/chosen-activities-page.component';
 import { ReflectionPageComponent } from './pages/reflection-page/reflection-page.component';
+import { IntroPageComponent } from './pages/intro-page/intro-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReflectionPageComponent } from './pages/reflection-page/reflection-page
     ActivitypageComponent,
     CardMandatoryActivityComponent,
     ChosenActivitiesPageComponent,
-    ReflectionPageComponent
+    ReflectionPageComponent,
+    IntroPageComponent
   ],
   imports: [
     BrowserModule

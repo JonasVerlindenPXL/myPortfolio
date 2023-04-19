@@ -24,7 +24,6 @@ export class AppComponent {
       const x = event.clientX - trailer.offsetWidth / 2;
       const y = event.clientY - trailer.offsetHeight / 2;
       trailer.style.transform = `translate(${x}px, ${y}px)`;
-      console.log(`${x} : ${y}`)
     });
   }
 
